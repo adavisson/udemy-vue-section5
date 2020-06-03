@@ -25,8 +25,12 @@ let vm1 = new Vue({
   }
 })
 
+vm1.newProp = 'New Prop'
+console.log(vm1)
+
 setTimeout(() => {
   vm1.title = 'Changed By Timer'
+  vm1.show()
 }, 3000)
 
 let vm2 = new Vue({
